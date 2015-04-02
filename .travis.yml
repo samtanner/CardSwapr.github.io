@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+    - '0.12'
+install: npm install
+script: node build.js && ./push.sh
+branches:
+  only:
+      - blog
+env:
+  global:
+    secure: "N/Acl/rrviKKmaWEOLAqvf6vLqF6YP9GVLsCf10dMI3y90RMJaadqkmveFd4yW4CWPNmBN6ZKKsPppBsAxkIy+1+jKQxNgjd4JKUHG0mIUfHRDNDuMjAptf1bdovD3Tctlq6UighSiJGk3ey+UB9AmMSHptKZi+T4ULm4+/w/7Q="
