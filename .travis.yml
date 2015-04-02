@@ -2,10 +2,10 @@ language: node_js
 node_js:
     - '0.12'
 install: npm install
-script: node build.js && ./push.sh
+script: ./push.sh
 branches:
   only:
       - blog
 env:
   global:
-    secure: "N/Acl/rrviKKmaWEOLAqvf6vLqF6YP9GVLsCf10dMI3y90RMJaadqkmveFd4yW4CWPNmBN6ZKKsPppBsAxkIy+1+jKQxNgjd4JKUHG0mIUfHRDNDuMjAptf1bdovD3Tctlq6UighSiJGk3ey+UB9AmMSHptKZi+T4ULm4+/w/7Q="
+    secure: "jLRqByHLGw6NIDhU2ocl6QonB79YQTXb9/s7Xd/foOB5JLV53TNvMfM5BctsUTTvsQOVe6pytjh3M3zQhi9A+UJeSCV3FGDl0QJ4ZK2fk3bFDbTjuLCR0SaMJILfULnXxUuirvzZr46+thxmU7Awp1WuGtcmy10AXcTLDCx/t8o="

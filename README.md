@@ -8,7 +8,7 @@ git clone https://github.com/cardswapr/cardswapr.github.io
 
 cd cardswapr.github.io
 git checkout blog
-travis encrypt -r cardswapr/cardswapr.github.io 'GIT_NAME="Your Name" GIT_EMAIL="you@example.com" GH_TOKEN=<token> --add env.global'
+travis encrypt -r cardswapr/cardswapr.github.io 'NAME="Your Name" EMAIL="you@example.com" USER="user" TOKEN=<token> --add env.global'
 ```
 
 ### New Posts

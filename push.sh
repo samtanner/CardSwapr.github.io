@@ -1,19 +1,19 @@
 #!/bin/bash
 echo "Starting push..."
+
+git clone "https://$USER:$TOKEN@github.com/cardswapr/cardswapr.github.io.git" build
 cd build
-rm -rf .git
+git checkout master
+cd ..
 
-echo "Creating repository..."
-git init
-git config --local --add user.name "$GIT_NAME"
-git config --local --add user.email "$GIT_EMAIL"
-git remote add origin "https://nickclaw:$GIT_TOKEN@github.com/cardswapr/cardswapr.github.io.git"
+node build.js
 
-echo "Commiting changes..."
+cd build
+git config --local --add user.name "$NAME"
+git config --local --add user.email "$EMAIL"
+
 git add -A
 git commit -m "Update blog."
-
-echo "Pushing to master..."
-git push -f origin master
+git push origin master
 
 echo "Push completed."
