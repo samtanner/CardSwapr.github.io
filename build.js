@@ -5,6 +5,12 @@ var fs = require('fs-extra'),
     ejs = require('ejs'),
     marked = require('marked');
 
+marked.setOptions({
+    gfm: true,
+    tables: true,
+    smartyPants: true
+});
+
 // make sure there is a build folder
 if (!fs.existsSync('build')) {
     fs.mkdirSync('build');
