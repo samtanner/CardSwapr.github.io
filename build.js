@@ -54,3 +54,4 @@ fs.writeFileSync(destPath, html);
 fs.copySync('src/css', 'build/css');
 fs.copySync('src/img', 'build/img');
 fs.copySync('.travis.yml', 'build/.travis.yml');
+fs.copySync('src/CNAME', 'build/CNAME');
