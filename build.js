@@ -53,3 +53,4 @@ fs.writeFileSync(destPath, html);
 // copy over assets
 fs.copySync('src/css', 'build/css');
 fs.copySync('src/img', 'build/img');
+fs.copySync('.travis.yml', 'build/.travis.yml');
