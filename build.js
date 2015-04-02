@@ -5,6 +5,10 @@ var fs = require('fs-extra'),
     ejs = require('ejs'),
     marked = require('marked');
 
+// make sure there is a build folder
+if (!fs.existsSync('build')) {
+    fs.mkdirSync('build');
+}
 
 // compile the src/template.ejs file
 var template = ejs.compile(fs.readFileSync('src/template.ejs').toString());
