@@ -1,3 +1,3 @@
 # Hello World
 
-Our first blog post!
+This is a test of the blog...
