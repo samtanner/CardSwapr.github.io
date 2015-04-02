@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '0.12'
 install: npm install
-script: node build.js && push.sh
+script: node build.js && ./push.sh
 branches:
   only:
   - blog
