@@ -30,7 +30,7 @@
 
             <div class="col-xs-12 pattern">
                 <div class="col-xs-5 title top">
-                    <h1 class="1st">coming soon</h1>
+                    <h1 class="1st">the blog</h1>
                 </div>
 
                 <div class="col-xs-7 rightSide">
@@ -40,9 +40,13 @@
             </div>
 
             <div class="col-xs-12 pattern2">
-                <% posts.forEach(function(post) { %>
-                    <h2><%- post %></h2>
-                <% }) %>
+                <ul>
+                    <% posts.forEach(function(post) { %>
+                        <li>
+                            <a href="<%- post.raw %>.html"><%- post.title %></a>
+                        </li>
+                    <% }) %>
+                </ul>
             </div>
         </div>
         <footer>
